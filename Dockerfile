@@ -7,4 +7,4 @@ COPY setup.sh /usr/bin
 RUN npm install -g gatsby-cli && \
     chmod u+x /usr/bin/setup.sh
 
-ENTRYPOINT /usr/bin/setup.sh
+ENTRYPOINT ["/usr/bin/setup.sh"]
