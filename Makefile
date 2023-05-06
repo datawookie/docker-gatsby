@@ -10,7 +10,7 @@ build-no-cache:
 	docker build --no-cache --platform=linux/amd64 -t $(IMAGE_LATEST) -t $(IMAGE_VERSION) .
 
 push:
-	# docker push $(IMAGE_LATEST)
+	docker push $(IMAGE_LATEST)
 	docker push $(IMAGE_VERSION)
 
 develop:
