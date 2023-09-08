@@ -2,16 +2,16 @@
 
 CMD=$@
 
-# By default tun a development server.
+# By default run a development server.
 #
 if [ "$CMD" == "" ]
 then
     CMD="develop"
 fi
 
-if ! [[ "$CMD" =~ ^(install|develop|build|serve)$ ]]
+if ! [[ "$CMD" =~ ^(install|develop|clean|build|serve)$ ]]
 then
-    echo "Valid commands are: develop, build and serve."
+    echo "Valid commands are: install, develop, clean, build and serve."
     exit 1
 fi
 
