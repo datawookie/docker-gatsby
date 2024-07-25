@@ -12,6 +12,3 @@ build-no-cache:
 push:
 	docker push $(IMAGE_LATEST)
 	docker push $(IMAGE_VERSION)
-
-develop:
-	docker run -it -p 8000:8000 -v ${PWD}:/site $(IMAGE)
