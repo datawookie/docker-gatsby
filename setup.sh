@@ -30,6 +30,10 @@ case "$CMD" in
     ;;
 esac
 
+# Allocate more space.
+#
+export NODE_OPTIONS="--max-old-space-size=8192"
+
 # Install dependencies.
 #
 # Don't do this when serving site, otherwise will clean public/ folder.
