@@ -1,4 +1,4 @@
-FROM node:20.11.1-slim
+FROM node:21.7.3-slim
 
 RUN apt-get update && \
     apt-get install -y git curl procps && \
